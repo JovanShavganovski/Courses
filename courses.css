@@ -1,0 +1,267 @@
+ul {
+  list-style-type: none;
+}
+
+.kursevi > div {
+  padding: 10px;
+  border: 1px solid grey;
+  min-width: 33%;
+}
+
+.kursevi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.site-zaedno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#navigacija {
+  width: 20%;
+  font-style: oblique;
+}
+
+.kursevi {
+  width: 80%;
+}
+
+.matematika{
+  height: 280px;
+}
+
+.fizika{
+  height: 300px;
+}
+
+.programiranje{
+  height: 200px;
+}
+
+.dizajn{
+  height: 250px;
+}
+
+.elektronika{
+  height: 100px;
+}
+
+.energetika{
+  height: 150px;
+}
+
+
+.kocka {
+  width: 50px;
+  background-color: cornflowerblue;
+}
+
+.dijagram {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 150px;
+  margin-top: 10px;
+}
+
+.kategorija {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.naslov {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer {
+  position: fixed;
+  max-height: 140px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  color: darkslategray;
+  font-size: smaller;
+  padding: 30px 0 20px 0;
+  
+}
+
+.footer-lista {
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-left: 1px solid darkslategray;
+}
+
+@media only screen and (max-width: 768px) {
+  #navigacija {
+    display: none;
+  }
+
+  .kursevi {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .kursevi > div {
+    min-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .kursevi > div {
+    min-width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 1rem;
+  word-spacing: 4px;
+}
+
+
+body {
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+}
+
+.services {
+  margin-top: 40px;
+}
+
+
+
+.first-three, .second-three {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+ 
+}
+
+.one, .two, .three, .four,
+.five, .six {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  border-radius: 9px;
+  background-color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+  color: #717580 !important;
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.267);
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+@-webkit-keyframes jello-horizontal {
+0% {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+30% {
+  -webkit-transform: scale3d(1.25, 0.75, 1);
+          transform: scale3d(1.25, 0.75, 1);
+}
+40% {
+  -webkit-transform: scale3d(0.75, 1.25, 1);
+          transform: scale3d(0.75, 1.25, 1);
+}
+50% {
+  -webkit-transform: scale3d(1.15, 0.85, 1);
+          transform: scale3d(1.15, 0.85, 1);
+}
+65% {
+  -webkit-transform: scale3d(0.95, 1.05, 1);
+          transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+  -webkit-transform: scale3d(1.05, 0.95, 1);
+          transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+}
+@keyframes jello-horizontal {
+0% {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+30% {
+  -webkit-transform: scale3d(1.25, 0.75, 1);
+          transform: scale3d(1.25, 0.75, 1);
+}
+40% {
+  -webkit-transform: scale3d(0.75, 1.25, 1);
+          transform: scale3d(0.75, 1.25, 1);
+}
+50% {
+  -webkit-transform: scale3d(1.15, 0.85, 1);
+          transform: scale3d(1.15, 0.85, 1);
+}
+65% {
+  -webkit-transform: scale3d(0.95, 1.05, 1);
+          transform: scale3d(0.95, 1.05, 1);
+}
+75% {
+  -webkit-transform: scale3d(1.05, 0.95, 1);
+          transform: scale3d(1.05, 0.95, 1);
+}
+100% {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+}
+
+
+
+.one:hover, .two:hover, .three:hover, .four:hover,
+.five:hover, .six:hover {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.267);
+  transition: linear;
+  transition-delay: 200ms;
+  transition-duration: 200ms;
+
+}
+.pic-one, .pic-two, .pic-three,
+.pic-four, .pic-five, .pic-six {
+  display: flex;
+  width: auto;
+  max-height: 60px;
+  padding: 10px 10px;
+}
+
+.text {
+  display: flex;
+  border-top: 1px solid rgba(128, 128, 128, 0.404);
+  width: 250px;
+  padding: 15px 15px;
+  font-size: small;
+  text-align: center;
+
+}
+
+.second-three {
+  margin-top: 50px;
+}
+
+
